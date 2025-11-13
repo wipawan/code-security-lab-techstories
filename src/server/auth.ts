@@ -64,9 +64,9 @@ export const authOptions: NextAuthOptions = {
         console.log("Got user", user);
         console.log(user);
         
-        // if (user.email) {
-        //   localStorage.setItem("user", user.email); 
-        // }
+        if (user.email) {
+          localStorage.setItem("user", user.email); 
+        }
 
         if (user.id) {
           localStorage.setItem("id", user.id); 
